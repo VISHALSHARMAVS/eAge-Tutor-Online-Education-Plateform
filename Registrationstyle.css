@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary-text-color: #465485;
+  --primary-text-color-dark: #3f4370;
+  --text-dark: #333333;
+  --text-light: #767368;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-menu-btn {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.main {
+  font-family: "Poppins", sans-serif;
+  background-image: url(./assets/top-view-desk-concept-with-coffee.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+  
+}
+
+.content {
+  position: absolute;
+
+  background-color: rgba(228,228, 228,0.8);
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 10px 10px 100px ;
+  
+}
+.content:hover{
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 40px ;
+}
+
+.logo {
+  margin:auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
+}
+
+.logo img {
+  max-width: 100px;
+
+}
+
+.content h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary-text-color);
+}
+
+.content form {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  
+}
+
+.input__row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input__group {
+  width: 100%;
+  position: relative;
+  
+}
+
+.input__group input {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: var(--text-dark);
+  outline: none;
+  
+  border: none;
+  border-bottom: 2px solid var(--primary-text-color);
+background: transparent;
+}
+.input__group:valid{
+  background: transparent;
+}
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background 1000s ease-in-out 0s;
+};
+
+/* for error */
+.input__group.error input {
+  border-color: red;
+}
+
+.input__group label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1rem;
+  color: var(--text-dark);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input__group input:focus ~ label,
+.input__group input:not(:placeholder-shown) ~ label {
+  font-size: 0.8rem;
+  top: -0.5rem;
+  color: var(--text-light);
+  
+}
+
+.input__group .error__field {
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  font-size: 0.8rem;
+  color: red;
+}
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform:translateY(2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  max-width: fit-content;
+  margin: auto;
+  padding: 1rem 4rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-text-color),
+    var(--primary-text-color-dark)
+  );
+  border-radius: 5rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+
+

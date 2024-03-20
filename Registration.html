@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Registrationstyle.css" />
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>eAge Tutor| Registration Page</title>
+  </head>
+  <body>
+    <div class="main">
+    <nav>
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <img src="assets/eage-tutor-high-resolution-logo-white-transparent.png" alt="logo" />
+        </div>
+        <div class="nav-menu-btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Feature</a></li>
+        <li class="nav-logo">
+          <a href="index.html">
+            <img src="assets/eage-tutor-high-resolution-logo-white-transparent.png" alt="logo" />
+          </a>
+        </li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="/Registration.html">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="img/eage-tutor-high-resolution-logo-black-transparent.png" alt="logo"  />
+        </div>
+        <h1>Registration Form</h1>
+        <form action="#" id="form">
+          <div class="input__row">
+            <div class="input__group">
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder=" "
+              />
+              <label for="firstname">First Name</label>
+              <span class="error__field"></span>
+            </div>
+            <div class="input__group">
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder=" "
+              />
+              <label for="lastname">Last Name</label>
+              <span class="error__field"></span>
+            </div>
+          </div>
+          
+          <div class="input__group">
+            <input type="text" id="email" name="email" placeholder=" " />
+            <label for="email">Email</label>
+            <span class="error__field"></span>
+          </div>
+          <div class="input__group">
+            <input type="text" id="phone" name="phone" placeholder=" " />
+            <label for="phone">Phone Number</label>
+            <span class="error__field"></span>
+          </div>
+          <button type="submit" class="btn btn-white btn-animate" >Register</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+  <script src="main.js"></script>
+    <script src="Registration.js"></script>
+  </body>
+</html>
