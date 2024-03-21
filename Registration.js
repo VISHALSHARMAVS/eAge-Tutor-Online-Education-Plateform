@@ -82,21 +82,6 @@ const validateForm = () => {
     setMessage(messageType.SUCCESS, lastName);
   }
 
-  // check user name field for error and success
-  // if (userNameValue === "") {
-  //   setMessage(messageType.ERROR, userName, "User Name is required");
-  //   isFormValid = false;
-  // } else if (userNameValue.length < 3 || userNameValue > 20) {
-  //   setMessage(
-  //     messageType.ERROR,
-  //     userName,
-  //     "User Name should contain 3-20 characters"
-  //   );
-  //   isFormValid = false;
-  // } else {
-  //   setMessage(messageType.SUCCESS, userName);
-  // }
-
   // check email field for error and success
   if (emailValue === "") {
     setMessage(messageType.ERROR, email, "Email is required");
