@@ -95,6 +95,7 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 .header {
@@ -337,19 +338,27 @@ nav {
   top: 0;
 }
 
-.client-container {
+
+
+.clients-container {
   padding-block: 1rem;
-  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.client-scroll-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  white-space: nowrap; 
 }
 
 .client-flex {
-  width: max-content;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-overflow: hidden;
-  animation: scroll 10s linear infinite;
-  
+  animation: scroll 5s linear infinite; /* Adjust duration as needed */
 }
 
 .client-flex img {
@@ -357,14 +366,15 @@ overflow: hidden;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
+
+
+
+
+
 
 .footer {
   overflow: hidden;
@@ -483,17 +493,10 @@ overflow: hidden;
 }
 
 @media (width > 480px) {
-  
-
-  
- 
-
- 
-
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+ 
   .client-flex img {
     max-width: 135px;
   }

@@ -53,10 +53,16 @@ ScrollReveal().reveal(".blog-card", {
 
 const client = document.querySelector(".client-flex");
 
-const clientContent = Array.from(instagram.children);
+const clientContent = Array.from(client.children);
 
 clientContent.forEach((item) => {
   const duplicateNode = item.cloneNode(true);
   duplicateNode.setAttribute("aria-hidder", true);
   client.appendChild(duplicateNode);
 });
+
+
+
+
+
+
